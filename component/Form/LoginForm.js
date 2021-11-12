@@ -14,7 +14,7 @@ function LoginForm() {
   const handleLogin = (e) => {
     e.preventDefault()
     StoreCredential()
-    if (window.localStorage.getItem(username)) {
+    if (window.localStorage.getItem("username")) {
       router.push("/dashboard")
     }
   }
